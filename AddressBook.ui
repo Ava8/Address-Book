@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddressBook</class>
+ <widget class="QWidget" name="AddressBook">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>488</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>640</width>
+    <height>488</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>640</width>
+    <height>488</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Address Book</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>321</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="ABList">
+    <item>
+     <widget class="QListWidget" name="contactsList"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="addContact">
+      <property name="text">
+       <string>добавить контакт</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="deleteBook">
+      <property name="text">
+       <string>удалить адресную книжку</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="email_field">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>200</y>
+     <width>221</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {background-color: rgb(255, 255, 255)};</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>150</y>
+     <width>56</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="labelBlock">
+    <item>
+     <widget class="QLabel" name="phone">
+      <property name="text">
+       <string>телефон</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="email">
+      <property name="text">
+       <string>почта</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="adress">
+      <property name="text">
+       <string>адрес</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="note">
+      <property name="text">
+       <string>заметка</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="phone_field">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>160</y>
+     <width>221</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {background-color: rgb(255, 255, 255)};</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="photo">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>10</y>
+     <width>111</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {  background-color: rgb(194, 194, 194) };
+
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>21</y>
+     <width>171</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="FIO">
+    <item>
+     <widget class="QLabel" name="name">
+      <property name="text">
+       <string>имя</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="name_field">
+      <property name="styleSheet">
+       <string notr="true">QLabel {background-color: rgb(255, 255, 255)};</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="sname">
+      <property name="text">
+       <string>фамилия</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="sname_field">
+      <property name="styleSheet">
+       <string notr="true">QLabel {background-color: rgb(255, 255, 255)};</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>430</y>
+     <width>267</width>
+     <height>72</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="editContact">
+      <property name="text">
+       <string>редактировать</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="deleteContact">
+      <property name="text">
+       <string>удалить контакт</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTextEdit" name="note_field">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>280</y>
+     <width>221</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="adress_field">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>240</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>deleteContact</tabstop>
+  <tabstop>addContact</tabstop>
+  <tabstop>contactsList</tabstop>
+  <tabstop>deleteBook</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
